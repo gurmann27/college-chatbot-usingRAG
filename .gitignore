@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Node dependencies and builds
+node_modules/
+dist/
+
+# Local databases and generated data
+data/
+*.db
+*.db-shm
+*.db-wal
+azure_upload_status.json
+
+# Logs
+*.log
+
+# Editor and local configuration
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+# AI agent configuration
+.agents/

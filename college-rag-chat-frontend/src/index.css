@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   Apple Dual-Tone Semantic Tokens (High-Contrast Sapphire + Scholarly Teal)
+   ========================================================================== */
+:root {
+  color-scheme: light dark;
+
+  /* Content layer — warm alabaster canvas contrasting strongly with cool sapphire-slate sidebar */
+  --bg-canvas: #fcfbf7;
+  --bg-surface: #ffffff;
+  --bg-secondary: #e7ebf2;
+  --bg-hover: rgba(15, 30, 58, 0.06);
+
+  /* Typography hierarchy (all >= 5.5:1 against both canvas and sidebar) */
+  --text-primary: #141820;
+  --text-secondary: #3f4654;
+  --text-tertiary: #4c5566;
+
+  /* Primary Tone: Campus Sapphire (user voice, primary actions, interactive focus) */
+  --accent-fill: #005ec4;
+  --accent-fill-hover: #004ea3;
+  --accent-text: #0052ad;
+  --accent-tint: rgba(0, 94, 196, 0.12);
+
+  /* Secondary Tone: Scholarly Teal (assistant provenance, citations, knowledge base) */
+  --tone-secondary-text: #0b665e;
+  --tone-secondary-tint: #dff4f1;
+  --tone-secondary-ring: rgba(11, 102, 94, 0.26);
+  --brand-gradient: linear-gradient(135deg, #005ec4 0%, #0d9488 100%);
+
+  /* Semantic signals */
+  --signal-green-bg: #e6f6ec;
+  --signal-green-text: #12632a;
+  --signal-green-ring: rgba(18, 99, 42, 0.24);
+
+  --signal-amber-bg: #fff4df;
+  --signal-amber-text: #854600;
+  --signal-amber-ring: rgba(133, 70, 0, 0.24);
+
+  --signal-red-bg: #fdeeee;
+  --signal-red-text: #bd2222;
+  --signal-red-ring: rgba(189, 34, 34, 0.24);
+
+  /* Hairline dividers & elevations */
+  --separator: rgba(20, 38, 70, 0.15);
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.06), 0 0 0 1px rgba(15, 23, 42, 0.07);
+  --shadow-glass: 0 8px 24px rgba(15, 23, 42, 0.09), 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-sheet: 0 24px 60px rgba(15, 23, 42, 0.2), 0 0 0 1px rgba(15, 23, 42, 0.09);
+
+  /* Functional layer (Regular Liquid Glass) — distinct cool slate-blue sidebar vs luminous bars */
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-sidebar: rgba(218, 228, 243, 0.88);
+  --sidebar-solid: #dae4f3;
+  --sidebar-active-bg: #ffffff;
+  --glass-border: rgba(15, 38, 75, 0.12);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  --scrim: rgba(15, 23, 42, 0.42);
+
+  /* Dual-tone ambient wash in content layer (Sapphire top-left + Teal bottom-right) */
+  --canvas-wash: radial-gradient(760px circle at 10% 8%, rgba(0, 94, 196, 0.085), transparent 60%),
+    radial-gradient(740px circle at 90% 92%, rgba(13, 148, 136, 0.095), transparent 60%);
+
+  /* Scroll edge fade matching warm canvas */
+  --edge-fade-top: linear-gradient(
+    to bottom,
+    rgba(252, 251, 247, 0.95) 0%,
+    rgba(252, 251, 247, 0.65) 60%,
+    rgba(252, 251, 247, 0) 100%
+  );
+  --edge-fade-bottom: linear-gradient(
+    to top,
+    rgba(252, 251, 247, 0.97) 0%,
+    rgba(252, 251, 247, 0.74) 65%,
+    rgba(252, 251, 247, 0) 100%
+  );
+
+  --scrollbar-thumb: rgba(20, 38, 70, 0.24);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Content layer — deep obsidian chat pane vs midnight navy-slate sidebar */
+    --bg-canvas: #0d0f13;
+    --bg-surface: #181c23;
+    --bg-secondary: #252b36;
+    --bg-hover: rgba(255, 255, 255, 0.08);
+
+    --text-primary: #f4f6f9;
+    --text-secondary: #b7becb;
+    --text-tertiary: #9aa3b4;
+
+    /* Primary Tone */
+    --accent-fill: #0066d6;
+    --accent-fill-hover: #0a84ff;
+    --accent-text: #66b3ff;
+    --accent-tint: rgba(10, 132, 255, 0.2);
+
+    /* Secondary Tone */
+    --tone-secondary-text: #5eead4;
+    --tone-secondary-tint: rgba(20, 184, 166, 0.18);
+    --tone-secondary-ring: rgba(94, 234, 212, 0.3);
+    --brand-gradient: linear-gradient(135deg, #0a84ff 0%, #14b8a6 100%);
+
+    --signal-green-bg: rgba(48, 209, 88, 0.18);
+    --signal-green-text: #6ee79b;
+    --signal-green-ring: rgba(48, 209, 88, 0.3);
+
+    --signal-amber-bg: rgba(255, 179, 64, 0.18);
+    --signal-amber-text: #ffd074;
+    --signal-amber-ring: rgba(255, 179, 64, 0.3);
+
+    --signal-red-bg: rgba(255, 69, 58, 0.2);
+    --signal-red-text: #ff8a80;
+    --signal-red-ring: rgba(255, 69, 58, 0.32);
+
+    --separator: rgba(148, 163, 184, 0.17);
+    --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    --shadow-glass: 0 8px 28px rgba(0, 0, 0, 0.48), 0 1px 3px rgba(0, 0, 0, 0.28);
+    --shadow-sheet: 0 24px 64px rgba(0, 0, 0, 0.72), 0 0 0 1px rgba(255, 255, 255, 0.14);
+
+    --glass-bg: rgba(24, 28, 35, 0.82);
+    --glass-sidebar: rgba(22, 29, 44, 0.9);
+    --sidebar-solid: #161d2c;
+    --sidebar-active-bg: #232f48;
+    --glass-border: rgba(148, 163, 184, 0.16);
+    --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    --scrim: rgba(0, 0, 0, 0.64);
+
+    --canvas-wash: radial-gradient(760px circle at 10% 8%, rgba(10, 132, 255, 0.13), transparent 60%),
+      radial-gradient(740px circle at 90% 92%, rgba(20, 184, 166, 0.12), transparent 60%);
+
+    --edge-fade-top: linear-gradient(
+      to bottom,
+      rgba(13, 15, 19, 0.95) 0%,
+      rgba(13, 15, 19, 0.62) 60%,
+      rgba(13, 15, 19, 0) 100%
+    );
+    --edge-fade-bottom: linear-gradient(
+      to top,
+      rgba(13, 15, 19, 0.97) 0%,
+      rgba(13, 15, 19, 0.74) 65%,
+      rgba(13, 15, 19, 0) 100%
+    );
+
+    --scrollbar-thumb: rgba(148, 163, 184, 0.25);
+  }
+}
+
+/* Increase Contrast support */
+@media (prefers-contrast: more) {
+  :root {
+    --text-secondary: #1e2430;
+    --text-tertiary: #2d3545;
+    --tone-secondary-text: #084c46;
+    --separator: rgba(0, 0, 0, 0.36);
+    --glass-border: rgba(0, 0, 0, 0.36);
+    --glass-bg: #ffffff;
+    --glass-sidebar: #d4e0f2;
+    --canvas-wash: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text-secondary: #e2e8f0;
+      --text-tertiary: #cbd5e1;
+      --tone-secondary-text: #7bf3e0;
+      --separator: rgba(255, 255, 255, 0.36);
+      --glass-border: rgba(255, 255, 255, 0.36);
+      --glass-bg: #181c23;
+      --glass-sidebar: #161d2c;
+      --canvas-wash: none;
+    }
+  }
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue',
+      system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-text);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .brand-duotone {
+    background-image: var(--brand-gradient);
+  }
+
+  .canvas-duotone {
+    background-color: var(--bg-canvas);
+    background-image: var(--canvas-wash);
+  }
+
+  /* Functional layer: Regular Liquid Glass */
+  .liquid-glass {
+    background-color: var(--glass-bg);
+    -webkit-backdrop-filter: blur(24px) saturate(1.4);
+    backdrop-filter: blur(24px) saturate(1.4);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-highlight), var(--shadow-glass);
+  }
+
+  .liquid-glass-sidebar {
+    background-color: var(--glass-sidebar);
+    -webkit-backdrop-filter: blur(28px) saturate(1.35);
+    backdrop-filter: blur(28px) saturate(1.35);
+    border-right: 1px solid var(--separator);
+  }
+
+  .scroll-edge-top {
+    background: var(--edge-fade-top);
+  }
+
+  .scroll-edge-bottom {
+    background: var(--edge-fade-bottom);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .liquid-glass {
+    background-color: var(--bg-surface);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .liquid-glass-sidebar {
+    background-color: var(--sidebar-solid);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 9999px;
+  }
+}

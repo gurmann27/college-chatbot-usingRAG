@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./college-rag-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./college-rag-backend/.env
+    environment:
+      - ALLOWED_ORIGINS=http://localhost:5173
+    volumes:
+      - rag-data:/app/data
+
+volumes:
+  rag-data:
+

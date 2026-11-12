@@ -1,0 +1,13 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "blob_event",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "college-docs/{name}",
+      "connection": "AZURE_STORAGE_CONNECTION_STRING"
+    }
+  ]
+}
+

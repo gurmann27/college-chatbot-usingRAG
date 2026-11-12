@@ -1,0 +1,9 @@
+{"question": "हॉस्टल में रात को वापस आने का समय क्या है?", "language": "hi", "expected_doc": "Hostel-Guidelines-2026.pdf", "expected_page": 2, "should_abstain": false}
+{"question": "B.Tech ki annual tuition fee kitni hai?", "language": "hi-Latn", "expected_doc": "Fee-Structure-2026-27.pdf", "expected_page": 1, "should_abstain": false}
+{"question": "What is the minimum attendance required to appear in end-semester exams?", "language": "en", "expected_doc": "Examination-Rules-2026.pdf", "expected_page": 1, "should_abstain": false}
+{"question": "What is the last date and late fine for the odd-semester examination form?", "language": "en", "expected_doc": "Exam-Form-Circular-2026.pdf", "expected_page": 1, "should_abstain": false}
+{"question": "What is the CGPA required for the Institute Merit Scholarship?", "language": "en", "expected_doc": "Scholarship-Policy-2026.pdf", "expected_page": 1, "should_abstain": false}
+{"question": "विदेशी भाषा फ्रेंच डिप्लोमा की फीस कितनी है?", "language": "hi", "expected_doc": null, "expected_page": null, "should_abstain": true}
+{"question": "What are the swimming pool membership charges?", "language": "en", "expected_doc": null, "expected_page": null, "should_abstain": true}
+{"question": "விடுதி இரவு நேரம் என்ன?", "language": "ta", "expected_doc": "Hostel-Guidelines-2026.pdf", "expected_page": 2, "should_abstain": false}
+

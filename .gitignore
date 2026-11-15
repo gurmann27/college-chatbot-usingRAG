@@ -20,7 +20,11 @@ node_modules/
 dist/
 
 # Local databases and generated data
-data/
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/self_test.json
+data/azure_upload_status.json
 *.db
 *.db-shm
 *.db-wal

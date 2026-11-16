@@ -21,7 +21,7 @@ class Settings(BaseSettings):
 
     # ------------------------------------------------------------------ general
     app_name: str = "college-rag-backend"
-    environment: Literal["local", "dev", "prod", "test"] = "local"
+    environment: Literal["local", "dev", "prod", "production", "test"] = "local"
     log_level: str = "INFO"
     mock_azure: bool = Field(default=False, description="Use in-memory fakes + sample corpus")
     allowed_origins: str = "http://localhost:5173"

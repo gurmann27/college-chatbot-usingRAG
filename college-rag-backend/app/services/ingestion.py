@@ -370,7 +370,7 @@ def _enrich_brochure_page(page_num: int, txt: str) -> str:
         )
         extra.append(
             "Library at Bennett University: Bennett University has a Dedicated Law Library and 02 Central Libraries with E-Learning Resources, "
-            "KOHA Integrated Library Management System, 3M electromagnetic/RFID security gates, smart card self-check-in and checkout, RFID dropbox, "
+            "KOHA Integrated Library Management System, 3M electromagnetic/RFID library security turnstiles, smart card self-check-in and checkout, RFID dropbox, "
             "and the M-OPAC mobile application for book search, renewal, and reservations."
         )
         extra.append(

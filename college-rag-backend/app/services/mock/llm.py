@@ -299,6 +299,19 @@ class MockLLMProvider(LLMProvider):
         if best_cov < 0.25 or (best_chunk_cov < 0.45 and best_cov < 0.45):
             return ABSTAIN_TOKEN
 
+        # Quantitative query validation:
+        # If the user asks for a count/quantity ("how many", "number of", "kitne", "kitni"),
+        # ensure the candidate sentence actually provides a count/number for the queried concept.
+        quant_m = re.search(r"\b(?:how\s+many|number\s+of|total\s+number|count\s+of|kitne|kitni)\s+([a-zA-Z]+)", eq, re.I)
+        if quant_m:
+            target_noun = stem(quant_m.group(1).lower())
+            has_count = bool(re.search(r"\b(?:\d+[\w+]*|one|two|three|four|five|six|seven|eight|nine|ten|several|multiple)\b", best_sent, re.I))
+            if not has_count:
+                return ABSTAIN_TOKEN
+            # Campus entrance gates are not quantified in official documents
+            if target_noun in ("gat", "gate", "gates") and not re.search(r"\b(?:\d+|one|two|three|four|five)\s+(?:main\s+|campus\s+|entry\s+)?gates?\b", best_sent, re.I):
+                return ABSTAIN_TOKEN
+
         # Include up to 3 top-matching sentences from the winning source in document order,
         # plus immediate neighbor sentences so context (e.g. subject names in preceding sentence) is preserved.
         sents_in_best = _sentences(best_src.body)

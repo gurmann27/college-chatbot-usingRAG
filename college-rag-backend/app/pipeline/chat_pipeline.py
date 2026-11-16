@@ -103,6 +103,19 @@ class ChatPipeline:
         if not passing:  # step (d): abstain WITHOUT calling the generation LLM
             return self._abstain(qu, "below_threshold")
 
+        # Specific entity guard: if query specifies an unoffered program or concept (e.g. MBBS, Pilot, Helipad)
+        # that does not appear in any candidate text, abstain so generic terms ('fee', 'course') don't match.
+        unoffered_match = re.search(
+            r"\b(MBBS|BDS|MD|MS|BAMS|BHMS|B\.?Pharm|M\.?Pharm|Pharmacy|Nursing|Dentistry|Dentist|Aviation|Pilot|Helipad|Airport)\b",
+            query,
+            re.I,
+        )
+        if unoffered_match:
+            entity = unoffered_match.group(1).lower()
+            all_cands_text = " ".join(c.text.lower() for c in passing)
+            if entity not in all_cands_text:
+                return self._abstain(qu, "unoffered_program")
+
         with timer.stage("generate"):
             answer, used = await generate_answer(query, qu, passing, llm=self.llm, settings=self.s)
         with timer.stage("verify"):

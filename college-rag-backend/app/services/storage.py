@@ -315,6 +315,9 @@ class _RestAzureBlobClient:  # pragma: no cover - lightweight httpx fallback whe
 
 
 def build_storage(settings: Settings) -> BlobStorage:
+    conn = settings.azure_storage_connection_string.get_secret_value()
+    if conn or settings.azure_storage_account_url:
+        return AzureBlobStorage(settings)
     if settings.mock_azure:
         from app.services.mock.storage import LocalFolderStorage
 

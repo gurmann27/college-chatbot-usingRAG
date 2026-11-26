@@ -1,0 +1,86 @@
+{
+  "processed_docs": 1,
+  "results": [
+    {
+      "query": "What programs are offered under the School of Artificial Intelligence?",
+      "language": "en",
+      "abstained": false,
+      "reason": "ok",
+      "page": 13,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "Under the School of Artificial Intelligence, Bennett University offers 7 programs: (1) B.Tech (Artificial Intelligence) - 4 Years, (2) BCA (Artificial Intelligence) - 3 Years / 4 Years (Hons. / Hons. with Research), (3) B.Sc. (Artificial Intelligence) - 3 Years / 4 Years (Hons. / Hons. with Research), (4) M.Tech (Artificial Intelligence) - 2 Years, (5) M.Sc. (Artificial Intelligence) - 2 Years, (6) MCA (Artificial Intelligence) - 2 Years, and (7) M.Tech (Artificial Intelligence) + Ph.D. (Dual Degree) - 5 Years, with specializations in Legal Tech, Fintech, Agri-Tech, Media, Healthcare, Digital Psychology, Material Sciences, Environmental Sustainability, Wireless Networks, Data Science, Pharma & Biotech, Robotics, Signal Processing, Quantum Information Processing, Computer Vision, and Natural Language Processing. [1]"
+    },
+    {
+      "query": "What are the hangout joints and food options on the Bennett University campus?",
+      "language": "en",
+      "abstained": false,
+      "reason": "ok",
+      "page": 28,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "Hangout Joints and Food Cafeteria at Bennett University: Campus hangout joints and food outlets include Maggi Point, Kolkata Chef, Chill Wheel, Southern Stories, Snap Eats, Domino's Pizza, Subway, House of Chow, and a massive 5775 sq. ft. multi-cuisine veg and non-veg cafeteria, certified by FSSAI as an Eat Right Campus. [1]"
+    },
+    {
+      "query": "Who is the Vice Chancellor and who are the Deans at Bennett University?",
+      "language": "en",
+      "abstained": false,
+      "reason": "ok",
+      "page": 20,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "Prof. (Dr.) Raj Singh is the Vice Chancellor of Bennett University, holding a Ph.D. (Strategic Finance) from Maharshi Dayanand University, CFA from the Institute of Chartered Financial Analysts of India, and MA (Economics) from University of Rajasthan. [1]"
+    },
+    {
+      "query": "Which companies visit Bennett University for placements?",
+      "language": "en",
+      "abstained": false,
+      "reason": "ok",
+      "page": 23,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "Key recruiters and top companies for placements at Bennett University (with 1200+ companies for placements) include Meta, Google, Adobe, Microsoft, Palo Alto Networks, The Times Group, HSBC, Amazon, Goldman Sachs, Deloitte, Dell, Capgemini, HCL, BNY Mellon, PwC, Hewlett Packard Enterprise, Tata Power, India Today, D. E. Shaw & Co., Reliance Retail, Infosys, Groww, TCS, Cisco, Tech Mahindra, HDFC Bank, IBM, Wipro, ServiceNow, KPMG, Daimler, Adani, LG, ITC, Zomato, EY, Coca-Cola, and Morgan Stanley, supported by Bennett Finishing School for employability trainings and in-house coaching for GRE, GMAT, and CAT. [1]"
+    },
+    {
+      "query": "School of Artificial Intelligence me kaunse programs offer hote hain?",
+      "language": "hi-Latn",
+      "abstained": false,
+      "reason": "ok",
+      "page": 13,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "Official document (Bennett-Brochure.pdf) ke mutabik: School of Artificial Intelligence ke antargat Bennett University yeh programs offer karta hai: 7 programs: (1) B.Tech (Artificial Intelligence) - 4 Years, (2) BCA (Artificial Intelligence) - 3 Years / 4 Years (Hons. / Hons. ke saath Research), (3) B.Sc. (Artificial Intelligence) - 3 Years / 4 Years (Hons. / Hons. ke saath Research), (4) M.Tech (Artificial Intelligence) - 2 Years, (5) M.Sc. (Artificial Intelligence) - 2 Years, (6) MCA (Artificial Intelligence) - 2 Years, aur (7) M.Tech (Artificial Intelligence) + Ph.D. (Dual Degree) - 5 Years, jisme specializations hain: Legal Tech, Fintech, Agri-Tech, Media, Healthcare, Digital Psychology, Material Sciences, Environmental Sustainability, Wireless Networks, Data Science, Pharma & Biotech, Robotics, Signal Processing, Quantum Information Processing, Computer Vision, aur Natural Language Processing. [1]"
+    },
+    {
+      "query": "Bennett University me kitne startups launch hue hain?",
+      "language": "hi-Latn",
+      "abstained": false,
+      "reason": "ok",
+      "page": 9,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "Official document (Bennett-Brochure.pdf) ke mutabik: 70+ Startups launch hue hain at Bennett University ke antargat Bennett Hatchery Foundation, ke saath ₹5.5 crore secured ke zariye government-backed seed funding programmes; featured campus startups include CWC (Dr. Sonal Kukreja), Visual Cognition Laboratory (Dr. Ankit Shukla), Savart (Sankarsh Chanda), Syina (Raunak Shukla), InstaApp (Samyak Jain), Qadira (Drishti Makhijani), DoubtConnect (Raghav Mishra), Physics Mindboggler (Pradyumn Mane), Myjobb (Shrey Tyagi), Vrdionx (Nimit Jain), EzLearn (Reyansh Garg), aur Ekomart.org (Vishal Kumar). [1]"
+    },
+    {
+      "query": "बेनेट यूनिवर्सिटी में आर्टिफिशियल इंटेलिजेंस के कौन से प्रोग्राम हैं?",
+      "language": "hi",
+      "abstained": false,
+      "reason": "ok",
+      "page": 13,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "आधिकारिक दस्तावेज़ (Bennett-Brochure.pdf) के अनुसार: School of Artificial Intelligence के अंतर्गत बेनेट यूनिवर्सिटी यह प्रोग्राम्स प्रदान करती है: 7 programs: (1) B.Tech (Artificial Intelligence) - 4 Years, (2) BCA (Artificial Intelligence) - 3 Years / 4 Years (Hons. / Hons. के साथ Research), (3) B.Sc. (Artificial Intelligence) - 3 Years / 4 Years (Hons. / Hons. के साथ Research), (4) M.Tech (Artificial Intelligence) - 2 Years, (5) M.Sc. (Artificial Intelligence) - 2 Years, (6) MCA (Artificial Intelligence) - 2 Years, और (7) M.Tech (Artificial Intelligence) + Ph.D. (Dual Degree) - 5 Years, जिसमें स्पेशलाइजेशन हैं: Legal Tech, Fintech, Agri-Tech, Media, Healthcare, Digital Psychology, Material Sciences, Environmental Sustainability, Wireless Networks, Data Science, Pharma & Biotech, Robotics, Signal Processing, Quantum Information Processing, Computer Vision, और Natural Language Processing. [1]"
+    },
+    {
+      "query": "हॉस्टल में रात को वापस आने का समय क्या है?",
+      "language": "hi",
+      "abstained": false,
+      "reason": "ok",
+      "page": 28,
+      "doc": "Bennett-Brochure.pdf",
+      "answer": "आधिकारिक दस्तावेज़ (Bennett-Brochure.pdf) के अनुसार: बेनेट यूनिवर्सिटी के हॉस्टल: Separate Girls और Boys Hostels on the 68 acres campus have the capacity to accommodate 10,000+ students at a time के साथ triple sharing AC rooms, comfortable beds, cupboards, study tables, hot water round the year, laundry service, common entertainment rooms, Wellness Centre, Pharmacy, Tuck Shop, Salons, और a 72000 sq. ft two-level Dining Hall. बेनेट यूनिवर्सिटी की टीचिंग और रिसर्च लैब्स: There are 121+ labs associated के साथ Dell, Amazon, Microsoft, Cisco, और Apple के लिए hands-on learning, an aesthetically designed Moot Court, TV Studio और Radio Studio built के अंतर्गत the guidance of Times Now & Radio Mirchi engineers, और 2 OB Vans. [1]"
+    },
+    {
+      "query": "हवाई जहाज पायलट कोर्स की फीस क्या है?",
+      "language": "hi",
+      "abstained": true,
+      "reason": "below_threshold",
+      "page": null,
+      "doc": null,
+      "answer": "आधिकारिक कॉलेज दस्तावेज़ों में यह जानकारी नहीं मिली।"
+    }
+  ]
+}

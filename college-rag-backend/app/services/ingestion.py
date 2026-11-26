@@ -546,9 +546,9 @@ class IngestionService:
             return "processed", rec
         except Exception as exc:
             rec.status = "failed"
-            rec.error = type(exc).__name__
+            rec.error = f"{type(exc).__name__}: {exc}"
             await self.registry.upsert(rec)
-            log.warning("blob_ingest_failed", extra={"document_id": rec.id, "error": type(exc).__name__})
+            log.warning("blob_ingest_failed", extra={"document_id": rec.id, "error": f"{type(exc).__name__}: {exc}"})
             return "failed", rec
 
     async def ingest_by_name(self, blob_name: str, *, force: bool = True) -> ReindexResult:

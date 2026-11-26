@@ -42,3 +42,6 @@ azure_upload_status.json
 Thumbs.db
 # AI agent configuration
 .agents/
+
+# Archives
+*.zip
